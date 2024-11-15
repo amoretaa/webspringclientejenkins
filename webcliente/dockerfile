@@ -1,0 +1,8 @@
+# esto es la imagen limpia que queremos usar
+FROM openjdk:17-jdk-alpine
+# comando que copiara nuestra aplicacion dentro de la imagen
+COPY target/webcliente-1.jar webcliente-1.jar
+# es lo que ejecutara dentro de la imagne la aplicacion
+ENTRYPOINT ["java","-jar","/webcliente-1.jar"]
+#expone el puerto
+EXPOSE 8083

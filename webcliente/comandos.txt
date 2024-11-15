@@ -1,0 +1,4 @@
+docker build --tag=webspringcliente  .
+docker images
+docker run -p8084:8084 webspringcliente
+docker ps -a
